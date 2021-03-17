@@ -18,6 +18,7 @@ class CreateChoicesTable extends Migration
             $table->text('text');
             $table->boolean('is_correct');
             $table->bigInteger('word_id')->unsigned();
+            $table->timestamps();
 
             $table->foreign('word_id')->references('id')->on('words');
         });

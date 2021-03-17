@@ -17,6 +17,7 @@ class CreateLogsTable extends Migration
             $table->id();
             $table->timestamp('date_taken');
             $table->integer('final_score');
+            $table->timestamps();
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('quiz_id')->unsigned();
 

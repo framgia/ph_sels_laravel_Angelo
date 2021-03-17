@@ -18,6 +18,7 @@ class CreateActivitiesTable extends Migration
             $table->integer('activity_id');
             $table->string('activity_type');
             $table->bigInteger('user_id')->unsigned();
+            $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
         });
