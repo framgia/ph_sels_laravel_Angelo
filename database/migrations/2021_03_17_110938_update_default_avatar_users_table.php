@@ -14,7 +14,7 @@ class UpdateDefaultAvatarUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('avatar')->default(null)->change();
+            $table->string('avatar')->nullable()->change();
         });
     }
 
