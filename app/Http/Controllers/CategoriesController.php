@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class CategoriesController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-   
-    public function index()
+
+    public function showCategoriesPage()
     {
-        return view('home');
+        return view('categories');
     }
 }
