@@ -14,6 +14,6 @@ class CategoriesController extends Controller
 
     public function showCategoriesPage()
     {
-        return view('categories');
+        return view('categories.categories');
     }
 }
