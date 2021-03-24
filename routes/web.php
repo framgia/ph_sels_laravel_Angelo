@@ -8,6 +8,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'showDashboardPage'])->name('dashboard');
 
 Route::get('/categories', [App\Http\Controllers\CategoriesController::class, 'showCategoriesPage'])->name('categories');
