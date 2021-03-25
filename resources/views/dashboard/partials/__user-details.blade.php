@@ -3,6 +3,7 @@
 <div class="flex">
     <div class="flex-1">
         <img 
+            class="border-black border-2"
             src="/image/sample-avatar.jpeg" 
             alt="avatar"
         >
