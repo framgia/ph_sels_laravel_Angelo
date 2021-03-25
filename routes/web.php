@@ -13,3 +13,4 @@ Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'show
 Route::get('/categories', [App\Http\Controllers\CategoriesController::class, 'showCategoriesPage'])->name('categories');
 
 Route::get('/words-learned', [App\Http\Controllers\WordsLearnedController::class, 'showWordsLearnedPage'])->name('words-learned');
+ 
