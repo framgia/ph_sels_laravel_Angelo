@@ -15,3 +15,4 @@ Route::get('/categories', [App\Http\Controllers\CategoriesController::class, 'sh
 Route::get('/words-learned', [App\Http\Controllers\WordsLearnedController::class, 'showWordsLearnedPage'])->name('words-learned');
  
 Route::get('/profile-page', [App\Http\Controllers\UserProfileController::class, 'showUserProfilePage'])->name('profile-page');
+ 
