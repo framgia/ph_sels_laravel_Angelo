@@ -23,7 +23,7 @@ class ChoiceFactory extends Factory
     {
         return [
             'text' => $this->faker->word,
-            // 'word_id' => $this->faker->numberBetween(1, Choice::count()),
+            'word_id' => $this->faker->numberBetween(1, Choice::count()),
         ];
     }
 }
