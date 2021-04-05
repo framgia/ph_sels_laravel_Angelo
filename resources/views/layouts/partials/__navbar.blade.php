@@ -29,13 +29,13 @@
                                     </li>
                                 @endif
                             @else
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('categories') }}">{{ __('Categories')}}</a>
+                                <li class="nav-item hover:underline">
+                                    <a class="nav-link" href="{{ route('categories') }}">{{ __('Categories') }}</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item hover:underline">
                                     <a class="nav-link" href="#">{{ __('Link 1') }}</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item hover:underline">
                                     <a class="nav-link" href="#">{{ __('Link 2') }}</a>
                                 </li>
 
