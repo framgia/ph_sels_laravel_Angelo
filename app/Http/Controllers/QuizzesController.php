@@ -16,10 +16,17 @@ class QuizzesController extends Controller
 
     public function showQuiz(Quiz $quiz)
     {
-
         return view('quizzes.quiz', [
             'words' => $quiz->words()->paginate(1) ,
             'quiz' => $quiz,
+        ]);
+    }
+
+    public function showResult(Quiz $quiz)
+    {
+        return view('quizzes.result', [
+            'quiz' => $quiz,
+            'choices' => Choice::where('is_correct', true)->get(),
         ]);
     }
 }

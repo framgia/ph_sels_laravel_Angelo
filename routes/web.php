@@ -17,4 +17,6 @@ Route::get('/words-learned', [App\Http\Controllers\WordsLearnedController::class
 Route::get('/profile-page', [App\Http\Controllers\UserProfileController::class, 'showUserProfilePage'])->name('profile-page');
  
 Route::get('/quiz/{quiz}', [App\Http\Controllers\QuizzesController::class, 'showQuiz'])->name('quiz');
+
+Route::get('/quiz/{quiz}/result', [App\Http\Controllers\QuizzesController::class, 'showResult'])->name('quizResult');
  
