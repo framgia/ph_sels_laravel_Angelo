@@ -8,11 +8,10 @@
           </div> 
 
           <div class="m-2 float-right">
-             <a class="btn btn-primary" href="{{ route('quiz') }}">
+             <a class="btn btn-primary" href="{{ route('quiz', ['quiz' => $quiz->id]) }}">
                {{ __('Start') }} 
              </a>
           </div>
        </div>
     @endforeach
 </div>
- 

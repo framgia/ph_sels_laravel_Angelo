@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Quiz;
+use App\Models\Word;
+use App\Models\Choice;
 use Illuminate\Http\Request;
 
 class QuizzesController extends Controller
@@ -11,9 +14,12 @@ class QuizzesController extends Controller
         $this->middleware('auth');
     }
 
-
-    public function showQuizPage()
+    public function showQuiz(Quiz $quiz)
     {
-        return view('quizzes.quizzes');
+
+        return view('quizzes.quiz', [
+            'words' => $quiz->words()->paginate(1) ,
+            'quiz' => $quiz,
+        ]);
     }
 }
