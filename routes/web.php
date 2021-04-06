@@ -19,4 +19,3 @@ Route::get('/profile-page', [App\Http\Controllers\UserProfileController::class, 
 Route::get('/quiz/{quiz}', [App\Http\Controllers\QuizzesController::class, 'showQuiz'])->name('quiz');
 
 Route::get('/quiz/{quiz}/result', [App\Http\Controllers\QuizzesController::class, 'showResult'])->name('quizResult');
- 
