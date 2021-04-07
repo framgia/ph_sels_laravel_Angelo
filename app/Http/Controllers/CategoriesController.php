@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Quizzes;
+use App\Models\Quiz;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -16,7 +16,7 @@ class CategoriesController extends Controller
     public function showCategoriesPage()
     {
         return view('categories.categories', [
-            'quizzes' => Quizzes::all()
+            'quizzes' => Quiz::all()
         ]);
     }
 }
